@@ -1,7 +1,7 @@
 import Comment from "../models/Comment.js";
 
 export const addComment = (username, comment_text, video_id) => {
-    const newComment = Comment.insertOne({ username, comment_text, video_id });
+    const newComment = Comment.create({ username, comment_text, video_id });
 
     return newComment;
 };

@@ -1,11 +1,10 @@
-import { createComment, getAllCommentsService, getCommentByIdService, getCommentByVideoIdService } from "../services/Comment.js";
+import { createCommentService, getAllCommentsService, getCommentByIdService, getCommentByVideoIdService } from "../services/Comment.js";
 
 export const createComment = async (req, res) => {
     try {
-        const { video_id } = req.params;
-        const { username, comment_text } = req.body;
+        const { username, comment_text, video_id } = req.body;
 
-        const newComment = await createComment(username, comment_text, video_id);
+        const newComment = await createCommentService(username, comment_text, video_id);
 
         res.status(201).json({
             data: newComment,
@@ -49,7 +48,7 @@ export const getCommentById = async (req, res) => {
 
 export const getCommentByVideoId = async (req, res) => {
     try {
-        const { video_id } = req.body;
+        const { video_id } = req.params;
 
         const comments = await getCommentByVideoIdService(video_id);
 

@@ -1,10 +1,10 @@
-import { createProduct, getAllProductsService, getProductByIdService } from "../services/Product.js";
+import { createProductService, getAllProductsService, getProductByIdService, getProductByVideoIdService } from "../services/Product.js";
 
 export const createProduct = async (req, res) => {
     try {
-        const { link, title, price } = req.body;
+        const { link, title, price, video_id } = req.body;
 
-        const newProduct = await createProduct(link, title, price);
+        const newProduct = await createProductService(link, title, price, video_id);
 
         res.status(201).json({
             data: newProduct,
@@ -48,9 +48,9 @@ export const getProductById = async (req, res) => {
 
 export const getProductByVideoId = async (req, res) => {
     try {
-        const { video_id } = req.body;
+        const { video_id } = req.params;
 
-        const products = await getProductByVideoId(video_id);
+        const products = await getProductByVideoIdService(video_id);
 
         res.json({
             data: products,

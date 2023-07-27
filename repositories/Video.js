@@ -1,7 +1,7 @@
 import Video from "../models/Video.js";
 
 export const addVideo = (thumbnail) => {
-    const newVideo = Video.insertOne({ url_thumbnail: thumbnail });
+    const newVideo = Video.create({ url_thumbnail: thumbnail });
 
     return newVideo;
 };

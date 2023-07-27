@@ -1,7 +1,7 @@
 import Product from "../models/Product.js";
 
-export const addProduct = (link, title, price) => {
-    const newProduct = Product.insertOne({ link, title, price });
+export const addProduct = (link, title, price, video_id) => {
+    const newProduct = Product.create({ link, title, price, video_id });
 
     return newProduct;
 };
@@ -19,7 +19,7 @@ export const getProductById = (id) => {
 };
 
 export const getProductByVideoId = (video_id) => {
-    const products = Product.find({ video_id });
+    const products = Product.find({ video_id: video_id });
 
     return products;
 };
