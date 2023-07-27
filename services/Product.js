@@ -1,4 +1,4 @@
-import { addProduct, getAllProducts, getProductById, getProductByVideoId } from "../repositories/Product";
+import { addProduct, getAllProducts, getProductById, getProductByVideoId } from "../repositories/Product.js";
 
 export const createProduct = (link, title, price) => {
     const newProduct = addProduct(link, title, price);

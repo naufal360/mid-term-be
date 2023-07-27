@@ -1,4 +1,4 @@
-import Product from "../models/Product";
+import Product from "../models/Product.js";
 
 export const addProduct = (link, title, price) => {
     const newProduct = Product.insertOne({ link, title, price });

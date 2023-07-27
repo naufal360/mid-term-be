@@ -8,12 +8,15 @@ import { mongodbConn } from './config/Mongodb.js';
 // config dotenv
 dotenv.config();
 
-const start = () => {
+const start = async () => {
     const app = express();
+
+    // env var
     const mongoHost = process.env.MONGODB_HOST;
+    const db_name = process.env.DB_NAME;
 
     // config mongodb
-    mongodbConn(mongoHost);
+    await mongodbConn(mongoHost, db_name);
 
     // config express json
     app.use(express.json());

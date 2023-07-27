@@ -1,4 +1,4 @@
-import { createComment, getAllCommentsService, getCommentByIdService, getCommentByVideoIdService } from "../services/Comment";
+import { createComment, getAllCommentsService, getCommentByIdService, getCommentByVideoIdService } from "../services/Comment.js";
 
 export const createComment = async (req, res) => {
     try {

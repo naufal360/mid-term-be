@@ -1,4 +1,4 @@
-import { addVideo, getAllVideos, getVideoById } from "../repositories/Video";
+import { addVideo, getAllVideos, getVideoById } from "../repositories/Video.js";
 
 export const createVideo = (thumbnail) => {
     const newVideo = addVideo(thumbnail);

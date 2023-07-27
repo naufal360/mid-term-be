@@ -1,4 +1,4 @@
-import { createVideo, getAllVideosService, getVideoByIdService } from "../services/Video";
+import { createVideo, getAllVideosService, getVideoByIdService } from "../services/Video.js";
 
 export const createVideo = async (req, res) => {
     try {

@@ -1,4 +1,4 @@
-import { addComment, getAllComments, getCommentById, getCommentByVideoId } from "../repositories/Comment";
+import { addComment, getAllComments, getCommentById, getCommentByVideoId } from "../repositories/Comment.js";
 
 export const createComment = (username, comment_text, video_id) => {
     const newComment = addComment(username, comment_text, video_id);

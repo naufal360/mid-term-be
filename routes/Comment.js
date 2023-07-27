@@ -1,9 +1,9 @@
 import express from 'express';
-import { createComment, getCommentByVideoId } from '../services/Comment.js';
+import { createComment, getCommentByVideoIdService } from '../services/Comment.js';
 
 const router = express.Router();
 
 router.post('/comments', createComment);
-router.get('/videos/:video_id/comments', getCommentByVideoId);
+router.get('/videos/:video_id/comments', getCommentByVideoIdService);
 
 export default router;
