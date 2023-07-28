@@ -36,6 +36,13 @@ export const getVideoById = async (req, res) => {
 
         const video = await getVideoByIdService(id);
 
+        // check not found id
+        if (!video || video === undefined) {
+            return res.status(404).json({
+                error: "can't find the video id",
+            });
+        }
+
         res.json({
             data: video,
         });

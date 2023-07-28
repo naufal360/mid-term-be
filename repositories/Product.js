@@ -22,4 +22,5 @@ export const getProductByVideoId = (video_id) => {
     const products = Product.find({ video_id: video_id });
 
     return products;
+    
 };

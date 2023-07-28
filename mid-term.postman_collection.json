@@ -300,6 +300,59 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"data\": {\n        \"_id\": \"64c2eb028145448e5fbf1ad4\",\n        \"url_thumbnail\": \"https://youtu.be/S0Kez6MERGE\",\n        \"__v\": 0\n    }\n}"
+						},
+						{
+							"name": "error_not_found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/videos/64c2eb028145448e5fbf1ad",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"videos",
+										"64c2eb028145448e5fbf1ad"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23-irUDxZwmMdmKURXCB5BQ5UGDajM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Jul 2023 00:36:09 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"can't find the video id\"\n}"
 						}
 					]
 				}
@@ -469,6 +522,60 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"64c2f189a740f9d832f8b7c9\",\n            \"username\": \"heri123\",\n            \"comment_text\": \"keren bgt bajunya\",\n            \"video_id\": \"64c2eb028145448e5fbf1ad4\",\n            \"created_at\": \"1690497417729\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"64c2f1b2a740f9d832f8b7cb\",\n            \"username\": \"erikacarl\",\n            \"comment_text\": \"ga mandi aja masih keliatan keren\",\n            \"video_id\": \"64c2eb028145448e5fbf1ad4\",\n            \"created_at\": \"1690497458018\",\n            \"__v\": 0\n        }\n    ]\n}"
+						},
+						{
+							"name": "error_not_found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/videos/64c2eb028145448e5fbf1ad4/comments",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"videos",
+										"64c2eb028145448e5fbf1ad4",
+										"comments"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23-irUDxZwmMdmKURXCB5BQ5UGDajM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Jul 2023 00:27:44 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"can't find the video id\"\n}"
 						}
 					]
 				}
@@ -699,6 +806,60 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"data\": [\n        {\n            \"_id\": \"64c2ed93326a4286df41785a\",\n            \"link\": \"https://www.tokopedia.com/colgatepalmolive\",\n            \"title\": \"Colgate\",\n            \"price\": 40000,\n            \"video_id\": \"64c2eb028145448e5fbf1ad4\",\n            \"__v\": 0\n        },\n        {\n            \"_id\": \"64c2f0af0980700c94754cce\",\n            \"link\": \"https://www.tokopedia.com/erigo\",\n            \"title\": \"Erigo\",\n            \"price\": 140000,\n            \"video_id\": \"64c2eb028145448e5fbf1ad4\",\n            \"__v\": 0\n        }\n    ]\n}"
+						},
+						{
+							"name": "error_not_found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:3000/videos/64c2eb028145448e5fb11ad4/products",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"videos",
+										"64c2eb028145448e5fb11ad4",
+										"products"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23-irUDxZwmMdmKURXCB5BQ5UGDajM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 28 Jul 2023 00:33:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"can't find the video id\"\n}"
 						}
 					]
 				}

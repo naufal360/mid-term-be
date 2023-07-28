@@ -52,6 +52,13 @@ export const getProductByVideoId = async (req, res) => {
 
         const products = await getProductByVideoIdService(video_id);
 
+        // not found video id
+        if (products.length === 0) {
+            return res.status(404).json({
+                error: "can't find the video id",
+            });
+        }
+
         res.json({
             data: products,
         });

@@ -52,6 +52,13 @@ export const getCommentByVideoId = async (req, res) => {
 
         const comments = await getCommentByVideoIdService(video_id);
 
+        // not found video id
+        if (comments.length === 0) {
+            return res.status(404).json({
+                error: "can't find the video id",
+            });
+        }
+
         res.json({
             data: comments,
         });

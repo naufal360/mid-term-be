@@ -1,3 +1,4 @@
+import mongoose from "mongoose";
 import Video from "../models/Video.js";
 
 export const addVideo = (thumbnail) => {
@@ -13,7 +14,13 @@ export const getAllVideos = () => {
 };
 
 export const getVideoById = (id) => {
-    const video = Video.findById({_id: id});
+    // check valid id
+    const checkId = mongoose.Types.ObjectId.isValid(id);
+    if(!checkId) {
+        return undefined;
+    }
+
+    const video = Video.findById({ _id: id });
 
     return video;
 };
